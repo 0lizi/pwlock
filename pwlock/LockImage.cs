@@ -7,9 +7,11 @@ namespace pwlock
 {
     public partial class LockImage : Form
     {
-        public LockImage()
+        string[] args = null;
+        public LockImage(string[] args)
         {
             InitializeComponent();
+            this.args = args;
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Normal;
             StartPosition = FormStartPosition.Manual;
@@ -107,7 +109,7 @@ namespace pwlock
         {
             timelab.Visible = false;
             timelab2.Visible = false;
-            LockScreenForm f2 = new LockScreenForm();
+            LockScreenForm f2 = new LockScreenForm(args);
             f2.ShowDialog();
         }
 
@@ -115,7 +117,7 @@ namespace pwlock
         {
             timelab.Visible = false;
             timelab2.Visible = false;
-            LockScreenForm f2 = new LockScreenForm();
+            LockScreenForm f2 = new LockScreenForm(args);
             f2.ShowDialog();
             
         }

