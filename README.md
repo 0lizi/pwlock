@@ -14,5 +14,5 @@
 ## 效果图
 ![](https://github.com/0lizi/pwlock/blob/master/1.jpg)
 ## 鸣谢
-此程序由[@Pickfordmatt](https://github.com/Pickfordmatt) 的https://github.com/Pickfordmatt/SharpLocker 项目二次开发而来<br>
+此程序由[@Pickfordmatt](https://github.com/Pickfordmatt) 的https://github.com/Pickfordmatt/SharpLocker 项目二次开发而来。<br>
 特别感谢！
