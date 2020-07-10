@@ -12,7 +12,9 @@
 ## key获取方式
 访问https://sc.ftqq.com/ 使用github账号登陆后，扫码绑定即可。
 ## 效果图
-![](https://github.com/0lizi/pwlock/blob/master/1.jpg)
+![锁屏壁纸](https://github.com/0lizi/pwlock/blob/master/2.jpg)<br>
+![输入密码](https://github.com/0lizi/pwlock/blob/master/3.jpg)<br>
+![远程推送](https://github.com/0lizi/pwlock/blob/master/1.jpg)<br>
 ## 鸣谢
 此程序由[@Pickfordmatt](https://github.com/Pickfordmatt) 的https://github.com/Pickfordmatt/SharpLocker 项目二次开发而来。<br>
 特别感谢！
