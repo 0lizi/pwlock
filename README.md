@@ -21,3 +21,5 @@
 ## 鸣谢
 此程序由[@Pickfordmatt](https://github.com/Pickfordmatt) 的https://github.com/Pickfordmatt/SharpLocker 项目二次开发而来。<br>
 特别感谢！
+## PS
+大家有啥好的建议可以留言哈。
