@@ -10,7 +10,7 @@
 ## 使用方法
 ``pwlock.exe key``
 ## key获取方式
-访问https://sc.ftqq.com/ 使用github账号登陆后，扫码绑定即可。
+使用最近网红server酱，https://sc.ftqq.com/ 使用github账号登陆后，扫码绑定即可（第三方借口），如果大家不喜欢也可以自己修改。
 ## 效果图
 锁屏壁纸：
 ![锁屏壁纸](https://github.com/0lizi/pwlock/blob/master/2.jpg)<br>
