@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A6F8500F-68BC-4EFC-962A-6C6E68D893AF}</ProjectGuid>
+    <ProjectGuid>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>pwlock</RootNamespace>
     <AssemblyName>pwlock</AssemblyName>
